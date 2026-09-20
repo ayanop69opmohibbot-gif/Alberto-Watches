@@ -2,7 +2,7 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Home Page -->
+    <!-- Home -->
     <url>
         <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/</loc>
         <changefreq>weekly</changefreq>
@@ -11,14 +11,28 @@
 
     <!-- Luxury Watches -->
     <url>
-        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/luxury.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/Luxury.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
-    <!-- Technology -->
+    <!-- Vintage Watches -->
     <url>
-        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/technology.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/Vintage.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Smart Watches -->
+    <url>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/smartwatch.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Technology Watches -->
+    <url>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/tech.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -30,9 +44,30 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Store Locator -->
+    <!-- Categories -->
     <url>
-        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/store-locator.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/category.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Store -->
+    <url>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/store.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- About -->
+    <url>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/about.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/contact.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -41,7 +76,14 @@
     <url>
         <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/support.html</loc>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- HTML Sitemap -->
+    <url>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/sitemap.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
     </url>
 
 </urlset>
