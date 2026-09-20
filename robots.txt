@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/sitemap.xml
