@@ -1,0 +1,104 @@
+
+[
+  {
+    "name": "Patek Philippe Classic",
+    "image": "othes-images/Patek-Philippe.jpeg",
+    "price": "Rs. 15,000",
+    "description": "Elegant luxury watch",
+    "page": "Luxury",
+    "category": "Patek Philippe",
+    "url": "patek-philippe",
+     "showLuxury": true
+  },
+  {
+    "name": "Rolex Premium",
+    "image": "othes-images/watch-image-three.jpg",
+    "price": "Rs. 20,000",
+    "description": "Premium luxury watch",
+    "page": "Luxury",
+    "category": "Rolex",
+    "url": "rolex",
+      "showLuxury": true
+  },
+  {
+    "name": "Omega Elite",
+    "image": "othes-images/Omega.webp",
+    "price": "Rs. 25,000",
+    "description": "Luxury Omega timepiece",
+    "page": "Luxury",
+    "category": "Omega",
+    "url": "omega",
+      "showLuxury": true
+  },
+
+
+{
+    "name": "Vintage Cartier Watch",
+    "image": "othes-images/Vintage-Cartier-Watch.webp",
+    "price": "Rs. 42,000",
+    "description": "Elegant vintage Cartier watch with a refined classic design",
+    "page": "Tenn Vintage",
+    "category": "Vintage Cartier",
+    "url": "vintage-cartier",
+    "showHome": true
+},
+
+{
+    "name": "Vintage Tissot Watch",
+    "image": "othes-images/Vintage-Tissot.webp",
+    "price": "Rs. 28,000",
+    "description": "Classic vintage Tissot watch with timeless Swiss-inspired craftsmanship",
+    "page": "Tenn Vintage",
+    "category": "Vintage Tissot",
+    "url": "vintage-tissot",
+    "showHome": true
+},
+
+{
+    "name": "Vintage Longines Watch",
+    "image": "othes-images/Vintage-Longines.webp",
+    "price": "Rs. 48,000",
+    "description": "Sophisticated vintage Longines watch featuring a traditional luxury design",
+    "page": "Tenn Vintage",
+    "category": "Vintage Longines",
+    "url": "vintage-longines",
+    "showHome": true
+},
+
+
+  
+  {
+    "name": "Apple Watch Series",
+    "image": "othes-images/apple-watch.webp",
+    "price": "Rs. 45,000",
+    "description": "Modern smartwatch with premium features",
+    "page": "Smart Watches",
+    "category": "Apple Watch",
+    "url": "apple-smart-watch",
+    "show": true
+},
+  {
+    "name": "Samsung Galaxy Watch",
+    "image": "othes-images/Samsung-watch.jpg",
+    "price": "Rs. 38,000",
+    "description": "Stylish smartwatch with advanced technology",
+    "page": "Smart Watches",
+    "category": "Samsung",
+    "url": "samsung",
+    "show": true
+  },
+  {
+    "name": "Amazfit Smart Watch",
+    "image": "othes-images/Amazfit-Smart-Watch.jpg",
+    "price": "Rs. 22,000",
+    "description": "Feature-rich smartwatch for everyday use",
+    "page": "Smart Watches",
+    "category": "Amazfit",
+    "url": "amazfit",
+    "show": true
+  }
+
+  
+
+
+]

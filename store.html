@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watches - Store Locator</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #050505;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            background: #050505;
+            border-bottom: 1px solid #b8860b;
+        }
+
+        .brand {
+            color: #d4af37 !important;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: #d4af37 !important;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 60px 0 35px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #d4af37;
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            color: #aaa;
+            font-size: 17px;
+        }
+
+        /* SEARCH */
+
+        .search-box {
+            background: #101010;
+            border: 1px solid #b8860b;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .search-box input {
+            background: #080808;
+            color: white;
+            border: 1px solid #555;
+        }
+
+        .search-box input:focus {
+            background: #080808;
+            color: white;
+            border-color: #d4af37;
+            box-shadow: none;
+        }
+
+        /* SHOP LIST */
+
+        .shop-list {
+            height: 500px;
+            overflow-y: auto;
+        }
+
+        .shop-item {
+            background: #101010;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .shop-item:hover {
+            border-color: #d4af37;
+            transform: translateX(3px);
+        }
+
+        .shop-item.active {
+            border: 1px solid #d4af37;
+            background: #17120a;
+        }
+
+        .shop-item h3 {
+            color: #d4af37;
+            font-size: 19px;
+        }
+
+        .shop-item p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        /* MAP */
+
+        #map {
+            height: 600px;
+            border: 1px solid #b8860b;
+            border-radius: 12px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #333;
+            margin-top: 50px;
+            padding: 25px;
+            text-align: center;
+            color: #777;
+        }
+
+        footer span {
+            color: #d4af37;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- navbar start -->
+<header style="background-color: #111 !important; border-bottom: 2px solid #d6ad62 !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 py-2">
+    
+      <img src="othes-images/compney-logo.png" width="210" height="70" alt="Alberto Watch Company">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a href="index.html" class="nav-link active px-3">Home</a></li>
+<!-- dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">category</a>
+
+          <ul class="dropdown-menu" style="background-color:#161616; border:1px solid #2a2a2a;">
+            <li><a class="dropdown-item" href="Luxury.html" style="color:#d5d5d5;">Luxury</a></li>
+            <li><a class="dropdown-item" href="Vintage.html" style="color:#d5d5d5;">Vintage</a></li>
+            <li><a class="dropdown-item" href="smartwatch.html" style="color:#d5d5d5;">Smart Watches</a></li>
+          </ul>
+        </li>
+<!-- dropdown end -->
+        <li class="nav-item"><a href="tech.html" class="nav-link px-3">Technology</a></li>
+        <li class="nav-item"><a href="store.html" class="nav-link px-3">Store Locator</a></li>
+        <li class="nav-item"><a href="support.html" class="nav-link px-3">Support</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link px-3">Gallery</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-3">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- navber end -->
+
+<section class="position-relative overflow-hidden"
+    style="
+    min-height: 430px;
+    background: url('othes-images/second-hero-image.png') center/cover no-repeat;
+    ">
+
+    <!-- Dark Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.55), rgba(0,0,0,.15));"></div>
+
+    <div class="container position-relative">
+        <div class="row align-items-center" style="min-height:430px;">
+
+            <div class="col-lg-6 text-white">
+                <p class="text-warning fw-bold mb-2">ALBERTO WATCH</p>
+                <h1 class="display-1 fw-normal" style="font-family: Georgia, serif; color:#e8c46a;">Store Locator</h1>
+                <p class="fs-5 text-light mb-4">Find your nearest store and explore our collection in person.</p>
+                <a href="Luxury.html" class="btn btn-outline-warning px-4 py-3">FIND A STORE</a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- hero end  -->
+
+
+<br><br>
+
+
+    <!-- MAIN -->
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-lg-4">
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="form-control"
+                        placeholder="Search city or store..."
+                        onkeyup="filterShops()">
+
+                </div>
+
+                <div id="shopList" class="shop-list">
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE -->
+
+            <div class="col-lg-8">
+
+                <div id="map"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+ <!-- footer -->
+<div class="container-fluid py-5" style="background: black;">
+<footer class="bg-black text-light pt-5 px-4 px-lg-5">
+  <div class="row gy-5">
+ 
+    <div class="col-lg-3 col-md-6">
+      <img src="othes-images/compney-logo.png" alt="Alberto Watch" class="mb-3" style="max-width:220px;">
+      <p class="text-secondary small">Discover timeless elegance and premium craftsmanship with Alberto Watch. Designed for those who appreciate luxury and style.</p>
+      <div class="d-flex gap-3 fs-5">
+        <a href="https://www.facebook.com/profile.php?id=61585937207748" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/alberto.watches/?hl=en" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/03159774961" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@AlbertoMariaBergo" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Quick Links</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+        <li class="mb-3"><a href="Luxury.html" class="text-light text-decoration-none">Luxury</a></li>
+        <li class="mb-3"><a href="Vintage.html" class="text-light text-decoration-none">Vintage</a></li>
+        <li class="mb-3"><a href="smartwatch.html" class="text-light text-decoration-none">Smart Watches</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Information</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+        <li class="mb-3"><a href="technology.html" class="text-light text-decoration-none">Technology</a></li>
+        <li class="mb-3"><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+        <li class="mb-3"><a href="support.html" class="text-light text-decoration-none">Support</a></li>
+        <li class="mb-3"><a href="sitemap.html" class="text-light text-decoration-none">sitemap</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Contact Us</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><i class="fa-solid fa-location-dot text-warning me-2"></i>Karachi, Pakistan</li>
+        <li class="mb-3"><i class="fa-solid fa-phone text-warning me-2"></i>+92 300 1234567</li>
+        <li class="mb-3"><i class="fa-solid fa-envelope text-warning me-2"></i>info@albertowatch.com</li>
+        <li class="mb-3"><i class="fa-solid fa-clock text-warning me-2"></i>Mon - Sat: 10:00 AM - 8:00 PM</li>
+      </ul>
+    </div>
+ 
+  </div>
+ 
+  <div class="border-top border-secondary-subtle mt-4 py-3 text-center small text-secondary">
+    &copy; 2026 <span class="text-warning fw-semibold">ALBERTO WATCH</span>. All Rights Reserved.
+  </div>
+</footer>
+</div>
+<!-- footer end's-->
+
+    <!-- Leaflet JS -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+    <script>
+
+        // STORE DATA
+
+        const shops = [
+
+            {
+                id: 1,
+                name: "Alberto Watch Company",
+                address: "New York, USA",
+                phone: "+1 212-555-1001",
+                lat: 40.7128,
+                lng: -74.0060
+            },
+
+            {
+                id: 2,
+                name: "Alberto Watch Store",
+                address: "Los Angeles, California, USA",
+                phone: "+1 213-555-1002",
+                lat: 34.0522,
+                lng: -118.2437
+            },
+
+            {
+                id: 3,
+                name: "Alberto Watch Store",
+                address: "Miami, Florida, USA",
+                phone: "+1 305-555-1003",
+                lat: 25.7617,
+                lng: -80.1918
+            }
+
+        ];
+
+        // CREATE USA MAP
+
+        const map = L.map("map").setView(
+            [39.8283, -98.5795],
+            4
+        );
+
+        // OpenStreetMap
+
+        L.tileLayer(
+            "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            {
+                maxZoom: 19,
+                attribution:
+                    "&copy; OpenStreetMap contributors"
+            }
+        ).addTo(map);
+
+        // MARKERS
+
+        const markers = {};
+
+        const shopList =
+            document.getElementById("shopList");
+
+        // DISPLAY STORES
+
+        function renderShops(shopData) {
+
+            shopList.innerHTML = "";
+
+            shopData.forEach(shop => {
+
+                // Create sidebar item
+
+                const li =
+                    document.createElement("div");
+
+                li.className = "shop-item";
+
+                li.id = `shop-item-${shop.id}`;
+
+
+                li.innerHTML = `
+
+                    <h3>${shop.name}</h3>
+
+                    <p>
+                        📍 ${shop.address}
+                    </p>
+
+                    <p>
+                        ☎ ${shop.phone}
+                    </p>
+
+                `;
+
+                // Click store
+
+                li.addEventListener("click", function() {
+
+                    focusOnShop(shop);
+
+                });
+
+
+                shopList.appendChild(li);
+
+
+                // Create marker
+
+                if (!markers[shop.id]) {
+
+                    const marker =
+                        L.marker([
+                            shop.lat,
+                            shop.lng
+                        ]).addTo(map);
+
+
+                    marker.bindPopup(`
+
+                        <div>
+
+                            <h5>${shop.name}</h5>
+
+                            <p>
+                                ${shop.address}
+                            </p>
+
+                            <p>
+                                ${shop.phone}
+                            </p>
+
+                        </div>
+
+                    `);
+
+
+                    marker.on("click", function() {
+
+                        highlightList(shop.id);
+
+                    });
+
+
+                    markers[shop.id] = marker;
+
+                }
+
+            });
+
+        }
+
+        // FOCUS STORE
+
+        function focusOnShop(shop) {
+
+            map.setView(
+                [shop.lat, shop.lng],
+                12
+            );
+
+            markers[shop.id].openPopup();
+
+            highlightList(shop.id);
+
+        }
+
+        // HIGHLIGHT STORE
+
+        function highlightList(shopId) {
+
+            document
+                .querySelectorAll(".shop-item")
+                .forEach(item => {
+
+                    item.classList.remove("active");
+
+                });
+
+
+            const activeItem =
+                document.getElementById(
+                    `shop-item-${shopId}`
+                );
+
+
+            if (activeItem) {
+
+                activeItem.classList.add("active");
+
+            }
+
+        }
+
+        // SEARCH FUNCTION
+
+        function filterShops() {
+
+            const query =
+                document
+                .getElementById("searchInput")
+                .value
+                .toLowerCase();
+
+
+            const filteredShops =
+                shops.filter(shop =>
+
+                    shop.name
+                    .toLowerCase()
+                    .includes(query)
+
+                    ||
+
+                    shop.address
+                    .toLowerCase()
+                    .includes(query)
+
+                );
+
+
+            // Show / hide markers
+
+            shops.forEach(shop => {
+
+                if (filteredShops.includes(shop)) {
+
+                    markers[shop.id].addTo(map);
+
+                } else {
+
+                    map.removeLayer(
+                        markers[shop.id]
+                    );
+
+                }
+
+            });
+
+
+            renderShops(filteredShops);
+
+        }
+
+        // INITIAL DISPLAY
+        
+        renderShops(shops);
+
+    </script>
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
+
+

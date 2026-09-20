@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERTO WATCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="othes-images/png" href="othes-images/favicon.png">
+    <link rel="icon" type="images/marshall-islands.png" href="images/marshall-islands.png">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- navbar start -->
+<header style="background-color: #111 !important; border-bottom: 2px solid #d6ad62 !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 py-2">
+    
+      <img src="othes-images/compney-logo.png" width="210" height="70" alt="Alberto Watch Company">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a href="index.html" class="nav-link active px-3">category</a></li>
+<!-- dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+
+          <ul class="dropdown-menu" style="background-color:#161616; border:1px solid #2a2a2a;">
+            <li><a class="dropdown-item" href="Luxury.html" style="color:#d5d5d5;">Luxury</a></li>
+            <li><a class="dropdown-item" href="Vintage.html" style="color:#d5d5d5;">Vintage</a></li>
+            <li><a class="dropdown-item" href="smartwatch.html" style="color:#d5d5d5;">Smart Watches</a></li>
+          </ul>
+        </li>
+<!-- dropdown end -->
+        <li class="nav-item"><a href="tech.html" class="nav-link px-3">Technology</a></li>
+        <li class="nav-item"><a href="store.html" class="nav-link px-3">Store Locator</a></li>
+        <li class="nav-item"><a href="support.html" class="nav-link px-3">Support</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link px-3">Gallery</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-3">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- navber end -->
+
+
+<!-- Category -->
+<div class="container-fluid py-5" style="background:#151515;">
+    <div class="row" id="CategoryListing">
+               
+    </div>
+</div>
+    <!-- Category -->
+
+<script>
+
+fetch('category.json')
+    .then(response => response.json())
+    .then(data => {
+
+        var categoriesforvintage = "";
+
+        for (const element of data) {
+             if(element.showHome === true) {
+            categoriesforvintage += `
+           <div class="col-md-6 col-lg-4">
+
+                    <div class="card m-3 text-center shadow"
+                         style="background:#111; border:1px solid #2a2a2a;">
+
+                        <img src="${element.image}"
+                             class="card-img-top"
+                             style="height:280px; object-fit:cover;"
+                             alt="${element.category}">
+
+                        <div class="card-body">
+
+                            <h4 style="color:#c9a24a;">
+                                ${element.category}
+                            </h4>
+
+                            <p style="color:#bbbbbb;">
+                                Explore ${element.category} watches
+                            </p>
+
+                            <a href="category.html?categoryUrl=${element.url}"
+                               class="btn btn-outline-warning">
+                                View Collection
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                `;
+        
+        }
+    }  
+        document.getElementById("CategoryListing").innerHTML = categoriesforvintage
+
+
+    });
+
+
+</script>
+
+<!-- footer -->
+<div class="container-fluid py-5" style="background:#111;">
+<footer class="bg-black text-light pt-5 px-4 px-lg-5">
+  <div class="row gy-5">
+ 
+    <div class="col-lg-3 col-md-6">
+      <img src="othes-images/compney-logo.png" alt="Alberto Watch" class="mb-3" style="max-width:220px;">
+      <p class="text-secondary small">Discover timeless elegance and premium craftsmanship with Alberto Watch. Designed for those who appreciate luxury and style.</p>
+      <div class="d-flex gap-3 fs-5">
+        <a href="https://www.facebook.com/profile.php?id=61585937207748" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/alberto.watches/?hl=en" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/03159774961" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@AlbertoMariaBergo" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+ 
+  <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Quick Links</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+        <li class="mb-3"><a href="Luxury.html" class="text-light text-decoration-none">Luxury</a></li>
+        <li class="mb-3"><a href="Vintage.html" class="text-light text-decoration-none">Vintage</a></li>
+        <li class="mb-3"><a href="smartwatch.html" class="text-light text-decoration-none">Smart Watches</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Information</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+        <li class="mb-3"><a href="technology.html" class="text-light text-decoration-none">Technology</a></li>
+        <li class="mb-3"><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+        <li class="mb-3"><a href="support.html" class="text-light text-decoration-none">Support</a></li>
+        <li class="mb-3"><a href="sitemap.html" class="text-light text-decoration-none">sitemap</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Contact Us</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><i class="fa-solid fa-location-dot text-warning me-2"></i>Karachi, Pakistan</li>
+        <li class="mb-3"><i class="fa-solid fa-phone text-warning me-2"></i>+92 300 1234567</li>
+        <li class="mb-3"><i class="fa-solid fa-envelope text-warning me-2"></i>info@albertowatch.com</li>
+        <li class="mb-3"><i class="fa-solid fa-clock text-warning me-2"></i>Mon - Sat: 10:00 AM - 8:00 PM</li>
+      </ul>
+    </div>
+ 
+  </div>
+ 
+  <div class="border-top border-secondary-subtle mt-4 py-3 text-center small text-secondary">
+    &copy; 2026 <span class="text-warning fw-semibold">ALBERTO WATCH</span>. All Rights Reserved.
+  </div>
+</footer>
+</div>
+
+           <!-- footer end's-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

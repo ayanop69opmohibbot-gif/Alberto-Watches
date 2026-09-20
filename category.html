@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERTO WATCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="othes-images/png" href="othes-images/favicon.png">
+    <link rel="icon" type="images/marshall-islands.png" href="images/marshall-islands.png">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- navbar start -->
+<header style="background-color: #111 !important; border-bottom: 2px solid #d6ad62 !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 py-2">
+    
+      <img src="othes-images/compney-logo.png" width="210" height="70" alt="Alberto Watch Company">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a href="index.html" class="nav-link active px-3">Home</a></li>
+<!-- dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">category</a>
+
+          <ul class="dropdown-menu" style="background-color:#161616; border:1px solid #2a2a2a;">
+            <li><a class="dropdown-item" href="Luxury.html" style="color:#d5d5d5;">Luxury</a></li>
+            <li><a class="dropdown-item" href="Vintage.html" style="color:#d5d5d5;">Vintage</a></li>
+            <li><a class="dropdown-item" href="smartwatch.html" style="color:#d5d5d5;">Smart Watches</a></li>
+          </ul>
+        </li>
+<!-- dropdown end -->
+        <li class="nav-item"><a href="tech.html" class="nav-link px-3">Technology</a></li>
+        <li class="nav-item"><a href="store.html" class="nav-link px-3">Store Locator</a></li>
+        <li class="nav-item"><a href="support.html" class="nav-link px-3">Support</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link px-3">Gallery</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-3">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- navber end -->
+
+ <!-- Category -->
+<div class="container-fluid py-5 text-center" style="background:#151515;">
+
+    <h1 id="CategoryHeading"
+        class="fw-bold"
+        style="color:#c9a24a; letter-spacing:3px; font-size:3rem;">
+        WATCHES
+    </h1>
+
+    <div class="mx-auto mt-3"
+         style="width:80px; height:3px; background:#c9a24a;">
+    </div>
+
+    <p id="CategoryDescription"
+       class="mt-4"
+       style="color:#bbbbbb; font-size:1.2rem;">
+        Timeless craftsmanship, designed for those who appreciate elegance.
+    </p>
+
+</div>
+
+
+<!-- luxury products -->
+   <div id="LuxurySection" class="container-fluid py-5" style="background:#151515;">
+            <div class="row" id="CategoryWiseListing">
+               
+        </div>
+    </div>
+<!-- luxury end -->
+
+
+<!-- Vintage Products --> 
+ <div id="VintageSection" class="container-fluid py-5" style="background:#151515;">
+    <div class="row" id="VintageWiseListing">
+
+    </div>
+</div>
+<!-- Vintage end -->
+
+<!-- smart watch Products --> 
+ <div id="SmartwatchSection" class="container-fluid py-5" style="background:#151515;">
+    <div class="row" id="smartwatchsWiseListing">
+
+    </div>
+</div>
+<!-- smart watch Products end --> 
+
+        <!-- Category -->
+
+<script>
+
+var url = location.href;
+var obj = new URL(url);
+var GetDataByCategory = obj.searchParams.get("categoryUrl");
+
+
+/* Dynamic Heading */
+
+var heading = "";
+
+if (GetDataByCategory === "rolex") {
+
+    heading = "ROLEX WATCHES";
+
+} else if (GetDataByCategory === "patek-philippe") {
+
+    heading = "PATEK PHILIPPE WATCHES";
+
+} else if (GetDataByCategory === "omega") {
+
+    heading = "OMEGA WATCHES";
+
+} else {
+
+    heading = "WATCHES";
+
+}
+
+document.getElementById("CategoryHeading").innerHTML = heading;
+
+
+/* Products */
+
+fetch('products.json')
+.then(response => response.json())
+.then(data => {
+
+    var products = "";
+    for (const element of data) {
+    if (
+    ["rolex", "patek-philippe", "omega"].includes(GetDataByCategory) &&
+    element.category === GetDataByCategory
+){
+            products += `
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card m-3"
+                     style="background:#111; border:1px solid #2a2a2a;">
+                    <img src="${element.image}" class="card-img-top" style="height:280px; object-fit:cover;" alt="${element.name}">
+
+                    <div class="card-body">
+                   
+                        <h5 style="color:#c9a24a;">${element.name}</h5>
+                        <p style="color:#bbbbbb;">${element.description}</p>
+                        <h6 style="color:white;">${element.price}</h6>
+                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal${element.id}" class="category-desing-link">View Details →</a>
+
+                    </div>
+                </div>
+            </div>
+           
+           
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal${element.id}" tabindex="-1" aria-labelledby="exampleModalLabel${element.id}" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#151515; border:1px solid #c9a24a; border-radius:0; overflow:hidden;">
+
+      <!-- Modal Header -->
+      <div class="modal-header"style="background:#111; border-bottom:1px solid #2a2a2a; padding:18px 25px;">
+
+        <h5 class="modal-title fw-bold" id="exampleModalLabel${element.id}" style="color:#c9a24a; letter-spacing:2px;">${element.name}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body"style="padding:25px;">
+        <div class="row align-items-center g-4">
+
+          <!-- Product Image -->
+          <div class="col-md-6">
+            <div style="background:#111; border:1px solid #2a2a2a; text-align:center;">
+              <img src="${element.image}" alt="${element.name}" style="width:100%; height:280px; object-fit:cover;">
+
+            </div>
+          </div>
+
+
+  <!-- Product Details -->
+          <div class="col-md-6">
+
+            <h2 style="color:#c9a24a; font-weight:bold; letter-spacing:1px;">${element.name}</h2>
+            <div style="width:60px; height:2px; background:#c9a24a; margin:15px 0;">
+
+            </div>
+
+            <p style="color:#bbbbbb; line-height:1.8; font-size:15px;">${element.description}</p>
+
+            <!-- Price -->
+            <h3 style="color:white; font-weight:bold; margin-top:20px;">${element.price}</h3>
+
+            <!-- Product Information -->
+            <div style="margin-top:20px; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:15px 0;">
+
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Material:</b> Premium Quality</p>
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Design:</b> Luxury & Elegant</p>
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Movement:</b> Precision Movement</p>
+             <p style="color:#999;margin-bottom:0;"><b style="color:#c9a24a;">Warranty:</b> Available</p>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="d-flex gap-2 mt-4">
+
+              <button type="button" class="btn" style="background:#c9a24a; color:#111; font-weight:bold; border-radius:0; padding:11px 20px;">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                Add to Cart
+              </button>
+
+              <button type="button" class="btn" style="background:transparent; color:#c9a24a; border:1px solid #c9a24a; font-weight:bold; border-radius:0; padding:11px 25px;">
+                <i class="fa-solid fa-bag-shopping me-2"></i>Buy Now
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal Footer -->
+      <div class="modal-footer" style="background:#111;border-top:1px solid #2a2a2a;padding:12px 20px;">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="background:#333; color:white; border-radius:0; padding:8px 20px;">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+           
+           
+            `;
+        }
+    }
+    document.getElementById("CategoryWiseListing").innerHTML = products;
+
+    if (products === "") {
+    document.getElementById("LuxurySection").style.display = "none";
+}
+
+});
+
+</script>
+
+<!-- vintage -->
+<script>
+
+var url = location.href;
+var obj = new URL(url);
+var GetDataByCategoryvintag = obj.searchParams.get("categoryUrl");
+
+
+fetch('products.json')
+.then(response => response.json())
+.then(data => {
+
+    var vintage = "";
+    for (const element of data) {
+      if (
+    !["rolex", "patek-philippe", "omega", "apple-smart-watch"].includes(GetDataByCategoryvintag) &&
+    element.category === GetDataByCategoryvintag
+    ){
+       
+            vintage += `
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card m-3"
+                     style="background:#111; border:1px solid #2a2a2a;">
+                    <img src="${element.image}" class="card-img-top" style="height:280px; object-fit:cover;" alt="${element.name}">
+
+                    <div class="card-body">
+
+                        <h5 style="color:#c9a24a;">${element.name}</h5>
+                        <p style="color:#bbbbbb;">${element.description}</p>
+                        <h6 style="color:white;">${element.price}</h6>
+                          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal${element.id}" class="category-desing-link">View Details →</a>
+
+
+                    </div>
+                </div>
+            </div>
+           
+           
+           
+           <!-- Modal -->
+<div class="modal fade" id="exampleModal${element.id}" tabindex="-1" aria-labelledby="exampleModalLabel${element.id}" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#151515; border:1px solid #c9a24a; border-radius:0; overflow:hidden;">
+
+      <!-- Modal Header -->
+      <div class="modal-header"style="background:#111; border-bottom:1px solid #2a2a2a; padding:18px 25px;">
+
+        <h5 class="modal-title fw-bold" id="exampleModalLabel${element.id}" style="color:#c9a24a; letter-spacing:2px;">${element.name}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body"style="padding:25px;">
+        <div class="row align-items-center g-4">
+
+          <!-- Product Image -->
+          <div class="col-md-6">
+            <div style="background:#111; border:1px solid #2a2a2a; text-align:center;">
+
+              <img src="${element.image}" alt="${element.name}" style="width:100%; height:280px; object-fit:cover;">
+
+            </div>
+          </div>
+
+
+  <!-- Product Details -->
+          <div class="col-md-6">
+
+            <h2 style="color:#c9a24a; font-weight:bold; letter-spacing:1px;">${element.name}</h2>
+            <div style="width:60px; height:2px; background:#c9a24a; margin:15px 0;">
+
+            </div>
+
+            <p style="color:#bbbbbb; line-height:1.8; font-size:15px;">${element.description}</p>
+
+            <!-- Price -->
+            <h3 style="color:white; font-weight:bold; margin-top:20px;">${element.price}</h3>
+
+            <!-- Product Information -->
+            <div style="margin-top:20px; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:15px 0;">
+
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Material:</b> Premium Quality</p>
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Design:</b> Luxury & Elegant</p>
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Movement:</b> Precision Movement</p>
+             <p style="color:#999;margin-bottom:0;"><b style="color:#c9a24a;">Warranty:</b> Available</p>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="d-flex gap-2 mt-4">
+
+              <button type="button" class="btn" style="background:#c9a24a; color:#111; font-weight:bold; border-radius:0; padding:11px 20px;">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                Add to Cart
+              </button>
+
+              <button type="button" class="btn" style="background:transparent; color:#c9a24a; border:1px solid #c9a24a; font-weight:bold; border-radius:0; padding:11px 25px;">
+                <i class="fa-solid fa-bag-shopping me-2"></i>Buy Now
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal Footer -->
+      <div class="modal-footer" style="background:#111;border-top:1px solid #2a2a2a;padding:12px 20px;">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="background:#333; color:white; border-radius:0; padding:8px 20px;">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+           
+           
+           
+            `;
+        }
+    }
+    document.getElementById("VintageWiseListing").innerHTML = vintage;
+
+    if (vintage === "") {
+    document.getElementById("VintageSection").style.display = "none";
+}
+
+});
+
+</script>
+<!-- vintage end's -->
+
+<!-- smartwatch start's -->
+<script>
+
+var url = location.href;
+var obj = new URL(url);
+var GetDataByCategorysmartwatch  = obj.searchParams.get("categoryUrl");
+
+
+fetch('products.json')
+.then(response => response.json())
+.then(data => {
+
+    var smartwatch = "";
+    for (const element of data) {
+       if (
+            GetDataByCategorysmartwatch === "apple-smart-watch" &&
+            element.category === GetDataByCategorysmartwatch
+        ) {
+            smartwatch += `
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card m-3"
+                     style="background:#111; border:1px solid #2a2a2a;">
+                    <img src="${element.image}" class="card-img-top" style="height:280px; object-fit:cover;" alt="${element.name}">
+
+                    <div class="card-body">
+
+                        <h5 style="color:#c9a24a;">${element.name}</h5>
+                        <p style="color:#bbbbbb;">${element.description}</p>
+                        <h6 style="color:white;">${element.price}</h6>
+                           <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal${element.id}" class="category-desing-link">View Details →</a>
+
+
+                    </div>
+                </div>
+            </div>
+           
+           
+           
+           
+           <!-- Modal -->
+<div class="modal fade" id="exampleModal${element.id}" tabindex="-1" aria-labelledby="exampleModalLabel${element.id}" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#151515; border:1px solid #c9a24a; border-radius:0; overflow:hidden;">
+
+      <!-- Modal Header -->
+      <div class="modal-header"style="background:#111; border-bottom:1px solid #2a2a2a; padding:18px 25px;">
+
+        <h5 class="modal-title fw-bold" id="exampleModalLabel${element.id}" style="color:#c9a24a; letter-spacing:2px;">${element.name}</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body"style="padding:25px;">
+        <div class="row align-items-center g-4">
+
+          <!-- Product Image -->
+          <div class="col-md-6">
+            <div style="background:#111; border:1px solid #2a2a2a; text-align:center;">
+
+              <img src="${element.image}" alt="${element.name}" style="width:100%; height:280px; object-fit:cover;">
+
+            </div>
+          </div>
+
+
+  <!-- Product Details -->
+          <div class="col-md-6">
+
+            <h2 style="color:#c9a24a; font-weight:bold; letter-spacing:1px;">${element.name}</h2>
+            <div style="width:60px; height:2px; background:#c9a24a; margin:15px 0;">
+
+            </div>
+
+            <p style="color:#bbbbbb; line-height:1.8; font-size:15px;">${element.description}</p>
+
+            <!-- Price -->
+            <h3 style="color:white; font-weight:bold; margin-top:20px;">${element.price}</h3>
+
+            <!-- Product Information -->
+            <div style="margin-top:20px; border-top:1px solid #2a2a2a; border-bottom:1px solid #2a2a2a; padding:15px 0;">
+
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Material:</b> Premium Quality</p>
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Design:</b> Luxury & Elegant</p>
+             <p style="color:#999;margin-bottom:8px;"><b style="color:#c9a24a;">Movement:</b> Precision Movement</p>
+             <p style="color:#999;margin-bottom:0;"><b style="color:#c9a24a;">Warranty:</b> Available</p>
+
+            </div>
+
+
+            <!-- Buttons -->
+            <div class="d-flex gap-2 mt-4">
+
+              <button type="button" class="btn" style="background:#c9a24a; color:#111; font-weight:bold; border-radius:0; padding:11px 20px;">
+                <i class="fa-solid fa-cart-shopping me-2"></i>
+                Add to Cart
+              </button>
+
+              <button type="button" class="btn" style="background:transparent; color:#c9a24a; border:1px solid #c9a24a; font-weight:bold; border-radius:0; padding:11px 25px;">
+                <i class="fa-solid fa-bag-shopping me-2"></i>Buy Now
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal Footer -->
+      <div class="modal-footer" style="background:#111;border-top:1px solid #2a2a2a;padding:12px 20px;">
+        <button type="button" class="btn" data-bs-dismiss="modal" style="background:#333; color:white; border-radius:0; padding:8px 20px;">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+           
+           
+           
+           
+           
+           
+            `;
+        }
+    }
+    document.getElementById("smartwatchsWiseListing").innerHTML = smartwatch;
+});
+
+</script>
+<!-- smartwatch end's -->
+
+
+
+
+<!-- footer -->
+<div class="container-fluid py-5" style="background:#111;">
+<footer class="bg-black text-light pt-5 px-4 px-lg-5">
+  <div class="row gy-5">
+ 
+    <div class="col-lg-3 col-md-6">
+      <img src="othes-images/compney-logo.png" alt="Alberto Watch" class="mb-3" style="max-width:220px;">
+      <p class="text-secondary small">Discover timeless elegance and premium craftsmanship with Alberto Watch. Designed for those who appreciate luxury and style.</p>
+      <div class="d-flex gap-3 fs-5">
+        <a href="https://www.facebook.com/profile.php?id=61585937207748" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/alberto.watches/?hl=en" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/03159774961" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@AlbertoMariaBergo" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Quick Links</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+        <li class="mb-3"><a href="Luxury.html" class="text-light text-decoration-none">Luxury</a></li>
+        <li class="mb-3"><a href="Vintage.html" class="text-light text-decoration-none">Vintage</a></li>
+        <li class="mb-3"><a href="smartwatch.html" class="text-light text-decoration-none">Smart Watches</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Information</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+        <li class="mb-3"><a href="technology.html" class="text-light text-decoration-none">Technology</a></li>
+        <li class="mb-3"><a href="gallery.html" class="text-light text-decoration-none">Gallery</a></li>
+        <li class="mb-3"><a href="support.html" class="text-light text-decoration-none">Support</a></li>
+        <li class="mb-3"><a href="sitemap.html" class="text-light text-decoration-none">sitemap</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Contact Us</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><i class="fa-solid fa-location-dot text-warning me-2"></i>Karachi, Pakistan</li>
+        <li class="mb-3"><i class="fa-solid fa-phone text-warning me-2"></i>+92 300 1234567</li>
+        <li class="mb-3"><i class="fa-solid fa-envelope text-warning me-2"></i>info@albertowatch.com</li>
+        <li class="mb-3"><i class="fa-solid fa-clock text-warning me-2"></i>Mon - Sat: 10:00 AM - 8:00 PM</li>
+      </ul>
+    </div>
+ 
+  </div>
+ 
+  <div class="border-top border-secondary-subtle mt-4 py-3 text-center small text-secondary">
+    &copy; 2026 <span class="text-warning fw-semibold">ALBERTO WATCH</span>. All Rights Reserved.
+  </div>
+</footer>
+</div>
+
+           <!-- footer end's-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+#productslisting .card {
+    background: #151515;
+    border: 1px solid #292929 !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#productslisting .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+#productslisting h5 {
+    color: white;
+}
+
+#productslisting p {
+    color: #999 !important;
+}
+
+#productslisting h6 {
+    color: #d6ad62;
+    font-size: 18px;
+}
+
+#productslisting .btn {
+    background: #d6ad62;
+    border: 0;
+    color: #111;
+}
+
+#info-section-link{
+    color: rgb(0, 0, 0);
+    background-color: #d6ad62;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 8px;   
+}
+
+#why-alberto .card {
+    background: #151515;
+    color: white;
+}
+
+#why-alberto .card-title,
+#why-alberto .card i {
+    color: #d6ad62;
+}
+
+#why-alberto .card-text {
+    color: #999;
+}
+
+#ALBERTO-1st-heding{
+    background-color: #111;
+}
+
+#cta-link{
+    background-color: #d6ad62;
+    color: #111;
+    text-decoration: none;
+     border-radius: 7px; 
+}
+
+.navbar-nav .nav-link{
+  color:#d5d5d5;
+  transition:color .3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#c9a24a !important;
+}
+.navbar-nav .nav-link.active{
+  color:#c9a24a;
+}
+
+.navbar-nav .nav-link{
+  display:flex;
+  align-items:center;
+  line-height:1;
+}
+
+.dropdown-menu .dropdown-item:hover{
+  background-color:#1f1f1f;
+  color:#c9a24a !important;
+}
+
+.category-desing-link{
+    color:#c9a24a;
+    transition: color .3s ease;
+    text-decoration: none;
+}
+.category-desing-link:hover{
+    color:#fff;
+}
+
+.watch-card {
+    transition: 0.3s ease;
+}
+
+.watch-card:hover {
+    transform: translateY(-5px);
+    border-color: #ffc107 !important;
+    box-shadow: 0 10px 25px rgba(255, 193, 7, 0.15);
+}
+
+.watch-img {
+    transition: 0.4s ease;
+}
+
+.watch-card:hover .watch-img {
+    transform: scale(1.05);
+}
+
+
+footer a {
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #d6ad62 !important;
+}
+
+footer ul li a:hover {
+    color: #d6ad62 !important;
+    padding-left: 5px;
+}
+
+footer .d-flex a:hover {
+    color: white !important;
+    border-color: white !important;
+    transform: translateY(-3px);
+}
+
+.sitemap-link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .sitemap-link:hover {
+    color: #d6ad62 !important; 
+    padding-left: 6px !important;
+    text-decoration: underline !important;
+    text-decoration-color: #d6ad62 !important;
+  }

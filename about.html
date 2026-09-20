@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBERTO WATCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="othes-images/png" href="othes-images/favicon.png">
+    <link rel="icon" type="images/marshall-islands.png" href="images/marshall-islands.png">
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+<body>
+<style>
+  body{
+    background-color: #14110c;
+    color: #ece4d3;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  h1, h2, blockquote{
+    font-family: 'Cormorant Garamond', serif;
+    color: #ece4d3;
+  }
+
+  a{ color: #c6a15b; }
+
+  /* navbar */
+  .site-header{
+    background-color: #0a0906;
+    border-bottom: 1px solid #322a1e;
+  }
+
+  .navbar-brand-mark{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.7rem;
+    color: #ece4d3;
+    text-decoration: none;
+  }
+
+  .navbar-nav .nav-link{
+    color: #b7ac97;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active{
+    color: #e8c874;
+  }
+
+  .dropdown-menu{
+    background-color: #1b1712;
+    border: 1px solid #322a1e;
+  }
+  .dropdown-item{ color: #b7ac97; }
+  .dropdown-item:hover{
+    background-color: #0a0906;
+    color: #e8c874;
+  }
+
+  /* hero image with text on top */
+  .hero{
+    position: relative;
+    width: 100%;
+  }
+  .hero img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 9, 6, 0.55);
+  }
+  .hero-text{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 600px;
+  }
+  .hero-text h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  .hero-text p{
+    color: #b7ac97;
+    font-size: 1.05rem;
+  }
+
+  /* content divs */
+  .section{
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .lede{
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+  }
+
+  .box{
+    background-color: #1b1712;
+    border: 1px solid #322a1e;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  .box h2{
+    color: #c6a15b;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .box p{
+    color: #b7ac97;
+    line-height: 1.7;
+  }
+
+  .byline{
+    background-color: #0a0906;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+  }
+
+  .byline blockquote{
+    font-style: italic;
+    font-size: 1.3rem;
+    max-width: 650px;
+    margin: 0 auto 15px auto;
+  }
+
+  .byline .names{
+    color: #c6a15b;
+  }
+
+  .byline .role{
+    color: #b7ac97;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+</style>
+</head>
+<body>
+
+<!-- navbar start -->
+<header style="background-color: #111 !important; border-bottom: 2px solid #d6ad62 !important;">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid px-4 py-2">
+    
+      <img src="othes-images/compney-logo.png" width="210" height="70" alt="Alberto Watch Company">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a href="index.html" class="nav-link active px-3">Home</a></li>
+<!-- dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">category</a>
+
+          <ul class="dropdown-menu" style="background-color:#161616; border:1px solid #2a2a2a;">
+            <li><a class="dropdown-item" href="Luxury.html" style="color:#d5d5d5;">Luxury</a></li>
+            <li><a class="dropdown-item" href="Vintage.html" style="color:#d5d5d5;">Vintage</a></li>
+            <li><a class="dropdown-item" href="smartwatch.html" style="color:#d5d5d5;">Smart Watches</a></li>
+          </ul>
+        </li>
+<!-- dropdown end -->
+        <li class="nav-item"><a href="tech.html" class="nav-link px-3">Technology</a></li>
+        <li class="nav-item"><a href="store.html" class="nav-link px-3">Store Locator</a></li>
+        <li class="nav-item"><a href="support.html" class="nav-link px-3">Support</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link px-3">Gallery</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-3">About Us</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-3">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- navber end -->
+
+
+<!-- Hero Section -->
+<div class="hero">
+  <img src="othes-images/information-section-image.png" alt="An Alberto Watch Company timepiece">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-text">
+    <span>ALBERTO VIP WATCHES</span>
+    <h1>Time, crafted with purpose.</h1>
+    <p>Discover timeless watches designed with precision, elegance, and modern sophistication for every moment.</p>
+    <a href="Luxury.html" class="hero-btn">Explore Collection</a>
+  </div>
+</div>
+
+
+<!-- content -->
+<div class="section">
+
+  <p class="lede">A timepiece is more than an accessory — it's a mark of precision, heritage, and personal style. From luxury classics to modern smartwatches, every piece we offer is chosen to help you carry a little more craftsmanship into your everyday life.</p>
+
+  <div class="box">
+    <h2>Our Philosophy</h2>
+    <p>Every watch meets high standards of accuracy. Designs draw inspiration from classic watchmaking traditions. Pieces transition smoothly from professional settings to casual outings.</p>
+  </div>
+
+  <div class="box">
+    <h2>Our Collection</h2>
+    <p>Luxury classics: traditional mechanical and automatic watches featuring fine leather straps and polished metal cases. Modern smartwatches: sleek digital hybrids that keep you connected without sacrificing style. Master craftsmanship: carefully inspected components built to last for generations.</p>
+  </div>
+
+</div>
+
+<!-- byline -->
+<div class="byline">
+  <blockquote>"We believe a timepiece is more than an accessory — it's a mark of precision, heritage, and personal style."</blockquote>
+  <div class="names">Rehan Khan · Ayan Ahmed · Ali Hamza · Haider Ali</div>
+  <div class="role">Founders, Alberto Watch Company</div>
+</div>
+
+<!-- footer -->
+<div class="container-fluid py-5" style="background:#111;">
+<footer class="bg-black text-light pt-5 px-4 px-lg-5">
+  <div class="row gy-5">
+ 
+    <div class="col-lg-3 col-md-6">
+      <img src="othes-images/compney-logo.png" alt="Alberto Watch" class="mb-3" style="max-width:220px;">
+      <p class="text-secondary small">Discover timeless elegance and premium craftsmanship with Alberto Watch. Designed for those who appreciate luxury and style.</p>
+      <div class="d-flex gap-3 fs-5">
+       <a href="https://www.facebook.com/profile.php?id=61585937207748" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/alberto.watches/?hl=en" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/03159774961" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.youtube.com/@AlbertoMariaBergo" class="text-warning border-bottom border-warning border-2 pb-1"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Quick Links</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+        <li class="mb-3"><a href="Luxury.html" class="text-light text-decoration-none">Luxury</a></li>
+        <li class="mb-3"><a href="Vintage.html" class="text-light text-decoration-none">Vintage</a></li>
+        <li class="mb-3"><a href="smartwatch.html" class="text-light text-decoration-none">Smart Watches</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Information</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><a href="about" class="text-light text-decoration-none">About Us</a></li>
+        <li class="mb-3"><a href="technology" class="text-light text-decoration-none">Technology</a></li>
+        <li class="mb-3"><a href="gallery" class="text-light text-decoration-none">Gallery</a></li>
+        <li class="mb-3"><a href="support" class="text-light text-decoration-none">Support</a></li>
+        <li class="mb-3"><a href="sitemap.html" class="text-light text-decoration-none">sitemap</a></li>
+      </ul>
+    </div>
+ 
+    <div class="col-lg-3 col-md-6">
+      <h5 class="text-warning fw-bold mb-4">Contact Us</h5>
+      <ul class="list-unstyled">
+        <li class="mb-3"><i class="fa-solid fa-location-dot text-warning me-2"></i>Karachi, Pakistan</li>
+        <li class="mb-3"><i class="fa-solid fa-phone text-warning me-2"></i>+92 300 1234567</li>
+        <li class="mb-3"><i class="fa-solid fa-envelope text-warning me-2"></i>info@albertowatch.com</li>
+        <li class="mb-3"><i class="fa-solid fa-clock text-warning me-2"></i>Mon - Sat: 10:00 AM - 8:00 PM</li>
+      </ul>
+    </div>
+ 
+  </div>
+ 
+  <div class="border-top border-secondary-subtle mt-4 py-3 text-center small text-secondary">
+    &copy; 2026 <span class="text-warning fw-semibold">ALBERTO WATCH</span>. All Rights Reserved.
+  </div>
+</footer>
+</div>
+
+           <!-- footer end's-->
+
+
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1318 @@
+[
+
+  {
+    "id":1,
+    "name": "Alberto Classic",
+    "image": "othes-images/watch-image-one.jpg",
+    "price": "Rs. 15,000",
+    "description": "Elegant classic watch",
+    "showmainhome": true
+  },
+  {
+    "id":2,
+    "name": "Alberto Premium",
+    "image": "othes-images/watch-image-two.jpg",
+    "price": "Rs. 20,000",
+    "description": "Premium luxury watch",
+    "showmainhome": true
+  },
+  {
+    "id":3,
+    "name": "Alberto Sport",
+    "image": "othes-images/watch-image-four.jpg",
+    "price": "Rs. 18,000",
+    "description": "Bold sport watch",
+    "showmainhome": true
+  },
+  {
+    "id":4,
+    "name": "Alberto Elite",
+    "image": "othes-images/watch-image-three.jpg",
+    "price": "Rs. 25,000",
+    "description": "Luxury timepiece",
+    "showmainhome": true
+  },
+
+   {
+    "id":5,
+    "name": "Patek Philippe Grand Complications 5327G-001",
+    "image": "category-watchs/categoty-watch-image-one.jpg",
+    "price": "$120,656.00",
+    "description": "Sunburst blue, white gold applied Breguet numerals. White gold leaf-shaped hands.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":6,
+    "name": "Patek Philippe Grand Complications 5304/301R-001",
+    "image": "category-watchs/categoty-watch-image-two.jpg",
+    "price": "$2,150,000.00 ",
+    "description": " Sunburst blue dial, white gold Breguet numerals. White gold leaf-shaped hands.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+
+{
+  "id":7,
+    "name": "Patek Philippe Grand Complications 5316/50P-001",
+    "image": "category-watchs/categoty-watch-image-three.jpg",
+    "price": "$1,120,390.00",
+    "description": "Sunburst blue sapphire dial, platinum case.<br> Manual-winding tourbillon minute repeater.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+{
+  "id":8,
+    "name": "Patek Philippe Grand Complications 5316/50P-001",
+    "image": "category-watchs/categoty-watch-image-four.jpg",
+    "price": "$1,203,290",
+    "description": "Sunburst blue sapphire dial, platinum case.<br> Manual-winding tourbillon minute repeater.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":9,
+    "name": "Patek Philippe Grande Sonnerie 6301P-001",
+    "image": "category-watchs/categoty-watch-image-five.jpg",
+    "price": "$1,895,000",
+    "description": "Grand Feu black enamel dial, platinum case.<br> Grande & petite sonnerie minute repeater.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":10,
+    "name": "Patek Philippe Grandmaster Chime 6300/403G-001",
+    "image": "category-watchs/categoty-watch-image-six.jpg",
+    "price": "$5,631,628",
+   "description": "White gold case, diamond & emerald set.<br> Grandmaster Chime, 20 complications.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+{
+  "id":11,
+    "name": "Patek Philippe Golden Ellipse 5738/1R-001",
+    "image": "category-watchs/categoty-watch-image-seven.jpg",
+    "price": "$87,000",
+    "description": "Sunburst ebony black dial, rose gold case.<br> Chain-style bracelet, Caliber 240.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":12,
+    "name": "Patek Philippe Golden Ellipse 5738P-001",
+    "image": "category-watchs/categoty-watch-image-eight.jpg",
+    "price": "$95,000",
+    "description": "Blue sunburst dial, platinum case.<br> Ultra-thin Caliber 240, alligator strap.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":13,
+    "name": "Patek Philippe Golden Ellipse 5738R-001",
+    "image": "category-watchs/categoty-watch-image-nine.jpg",
+    "price": "$45,000",
+    "description": "Ebony black sunburst dial, rose gold case.<br> Onyx crown, Caliber 240.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":14,
+    "name": "Patek Philippe Golden Ellipse 5738/51G-001",
+    "image": "category-watchs/categoty-watch-image-ten.jpg",
+    "price": "$92,691",
+    "description": "Hand-engraved black enamel dial, white gold case. Rare Handcrafts, Caliber 240.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+{
+  "id":15,
+    "name": "Patek Philippe Golden Ellipse 5738G-001",
+    "image": "category-watchs/categoty-watch-image-eleven.jpg",
+    "price": "$50,000",
+    "description": "Sunburst olive green dial, white gold case.<br> Ultra-thin Caliber 240, calfskin strap.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":16,
+    "name": "Patek Philippe Golden Ellipse 3738/100J-012",
+    "image": "category-watchs/categoty-watch-image-twelve.jpg",
+    "price": "$18,000",
+    "description": "Small dial, yellow gold case.<br> Self-winding mechanical movement.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+{
+  "id":17,
+    "name": "Patek Philippe Calatrava 5226G-001",
+    "image": "category-watchs/categoty-watch-image-13.jpg",
+    "price": "$46,070",
+    "description": "Textured charcoal gray dial, white gold case.<br> Self-winding, sweep seconds, date.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":18,
+    "name": "Patek Philippe Calatrava 6119R-001",
+    "image": "category-watchs/categoty-watch-image-14.jpg",
+    "price": "$34,500",
+    "description": "Silvery grained dial, rose gold hobnail bezel.<br> Manual-winding, 65-hour reserve.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":19,
+    "name": "Patek Philippe Calatrava 6007G-010",
+    "image": "category-watchs/categoty-watch-image-15.jpg",
+    "price": "$42,000",
+    "description": "Ebony black carbon-pattern dial, white gold case. Self-winding, sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+{
+  "id":20,
+    "name": "Patek Philippe Gondolo 7042/100R-010",
+    "image": "category-watchs/categoty-watch-image-16.jpg",
+    "price": "$254,826",
+    "description": "Diamond-paved dial, rose gold case with pearls. Manual-winding Caliber 215.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":21,
+    "name": "Patek Philippe Gondolo 7042/100G-010",
+    "image": "category-watchs/categoty-watch-image-17.jpg",
+    "price": "$288,362",
+    "description": "Diamond & pearl-set dial, white gold case. Haute Joaillerie, manual-winding.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+{
+  "id":22,
+    "name": "Patek Philippe Complications 5905/1A-001",
+    "image": "category-watchs/categoty-watch-image-18.jpg",
+    "price": "$55,000",
+    "description": "Sunburst olive green dial, steel case.\nFlyback chronograph, annual calendar.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":23,
+    "name": "Patek Philippe Calatrava Pilot 5924G-010",
+    "image": "category-watchs/categoty-watch-image-19.jpg",
+    "price": "$65,000",
+    "description": "Lacquered khaki green dial, white gold case.\nFlyback chronograph, Travel Time.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":24,
+    "name": "Patek Philippe Complications 5326G-001",
+    "image": "category-watchs/categoty-watch-image-20.jpg",
+    "price": "$78,950",
+    "description": "Textured grey dial, white gold case.\nAnnual calendar, Travel Time.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":25,
+    "name": "Patek Philippe World Time 7129J-001",
+    "image": "category-watchs/categoty-watch-image-21.jpg",
+    "price": "$58,000",
+    "description": "Carmine red guilloché dial, yellow gold case.\nCaliber 240 HU, world time.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":26,
+    "name": "Patek Philippe Complications 5330G-001",
+    "image": "category-watchs/categoty-watch-image-22.jpg",
+    "price": "$71,500",
+    "description": "Blue denim-style dial, white gold case.\nWorld time with date function.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+{
+  "id":27,
+    "name": "Patek Philippe Annual Calendar Chronograph 5960/1A-001",
+    "image": "category-watchs/categoty-watch-image-23.jpg",
+    "price": "$55,000",
+    "description": "Silver dial with red accents, steel case.\nAnnual calendar, flyback chronograph.",
+    "category": "patek-philippe",
+    "showHome": false
+},
+
+  {
+    "id":28,
+    "name": "Patek Philippe Nautilus <br> 5811/1G-001",
+    "image": "category-watchs/categoty-watch-image-23.jpg",
+    "price": "$70,000",
+    "description": "Blue sunburst dial with white gold case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":29,
+    "name": "Patek Philippe Nautilus 7118/1200R-001",
+    "image": "category-watchs/categoty-watch-image-24.jpg",
+    "price": "$60,000",
+    "description": "Silvery white wave dial with rose gold case.\nDiamond-set bezel, date display.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":30,
+    "name": "Patek Philippe Nautilus 5740/1G- <br> 001",
+    "image": "category-watchs/categoty-watch-image-25.jpg",
+    "price": "$145,000",
+    "description": "Blue sunburst dial with white gold case.\nPerpetual calendar with moon phases.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":31,
+    "name": "Patek Philippe Nautilus 5712/1R- <br> 001",
+    "image": "category-watchs/categoty-watch-image-26.jpg",
+    "price": "$110,000",
+    "description": "Brown sunburst dial with rose gold case.\nMoon phases, date, and power reserve indicator.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":32,
+    "name": "Patek Philippe Cubitus 5822P-001",
+    "image": "category-watchs/categoty-watch-image-27.jpg",
+    "price": "$88,000",
+    "description": "Blue sunburst dial with platinum case and navy strap.\nInstantaneous grand date, day.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":33,
+    "name": "Patek Philippe Cubitus 5821/1AR-001",
+    "image": "category-watchs/categoty-watch-image-28.jpg",
+    "price": "$61,000",
+    "description": "Blue sunburst dial with rose gold and steel case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":34,
+    "name": "Patek Philippe Cubitus 5821/1A-001",
+    "image": "category-watchs/categoty-watch-image-29.jpg",
+    "price": "$41,000",
+    "description": "Olive green sunburst dial with stainless steel case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":35,
+    "name": "Patek Philippe Cubitus 7128/1G-001",
+    "image": "category-watchs/categoty-watch-image-30.jpg",
+    "price": "$52,000",
+    "description": "Blue sunburst dial with white gold case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":36,
+    "name": "Patek Philippe Cubitus 7128/1R-001",
+    "image": "category-watchs/categoty-watch-image-31.jpg",
+    "price": "$55,000",
+    "description": "Brown sunburst dial with rose gold case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+
+  {
+    "id":37,
+    "name": "Patek Philippe Cubitus 5821/1A-001",
+    "image": "category-watchs/categoty-watch-image-32.jpg",
+    "price": "$41,000",
+    "description": "Olive green sunburst dial with stainless steel case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":38,
+    "name": "Patek Philippe Cubitus 5821/1A-001",
+    "image": "category-watchs/categoty-watch-image-33.jpg",
+    "price": "$41,000",
+    "description": "Olive green sunburst dial with stainless steel case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":39,
+    "name": "Patek Philippe Cubitus 7128/1G-001",
+    "image": "category-watchs/categoty-watch-image-34.jpg",
+    "price": "$52,000",
+    "description": "Blue sunburst dial with white gold case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+  {
+    "id":40,
+    "name": "Patek Philippe Cubitus 7128/1R-001",
+    "image": "category-watchs/categoty-watch-image-35.jpg",
+    "price": "$55,000",
+    "description": "Brown sunburst dial with rose gold case.\nDate display and sweep seconds.",
+    "category": "patek-philippe",
+    "showHome": false
+  },
+
+
+  {
+    "id":41,
+    "name": "Rolex Sky-Dweller 336934",
+    "image": "category-watchs/categoty-watch-image-36.jpg",
+    "price": "$22,000",
+    "description": "Champagne dial with yellow Rolesor steel and gold case.\nDual time zone display and annual calendar.",
+    "category": "rolex",
+    "showHome": false
+  },
+
+  
+  {
+    "id":42,
+    "name": "Rolex Oyster Perpetual 36",
+    "image": "category-watchs/categoty-watch-image-37.jpg",
+    "price": "$14,000",
+    "description": "Celebration motif turquoise blue dial with Oystersteel case.\nClassic Oyster design with 36 mm case size.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":43,
+    "name": "Rolex Oyster Perpetual 36",
+    "image": "category-watchs/categoty-watch-image-38.jpg",
+    "price": "$38,000",
+    "description": "Bright green dial with 18 kt yellow gold case.\nClassic Oyster design with matching gold bracelet.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":44,
+    "name": "Rolex Land-Dweller",
+    "image": "category-watchs/categoty-watch-image-39.jpg",
+    "price": "$42,000",
+    "description": "Honeycomb patterned dial with Everose gold case.\nFluted bezel with integrated Jubilee style bracelet.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":45,
+    "name": "Rolex Deepsea 126660",
+    "image": "category-watchs/categoty-watch-image-40.jpg",
+    "price": "$14,500",
+    "description": "D-blue gradient dial with Oystersteel case.\nUltra-resistant professional diver watch with helium escape valve.",
+    "category": "rolex",
+    "showHome": false
+  },
+
+
+  {
+    "id":46,
+    "name": "Rolex Perpetual 1908",
+    "image": "category-watchs/categoty-watch-image-41.jpg",
+    "price": "$23,000",
+    "description": "Intense white dial with 18 kt yellow gold case.\nSmall seconds sub-dial with elegant gold bracelet.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":47,
+    "name": "Rolex Air-King 126900",
+    "image": "category-watchs/categoty-watch-image-42.jpg",
+    "price": "$7,500",
+    "description": "Black dial with green logo accents and Oystersteel case.\nDistinctive navigational time display with Oyster bracelet.",
+    "category": "rolex",
+    "showHome": false
+  },
+
+  {
+    "id":48,
+    "name": "Rolex Cosmograph Daytona <br> 116508",
+    "image": "category-watchs/categoty-watch-image-43.jpg",
+    "price": "$78,000",
+    "description": "Bright green dial with 18 kt yellow gold case.\nFlyback chronograph with tachymetric bezel.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":49,
+    "name": "Rolex Yacht-Master II 116680",
+    "image": "category-watchs/categoty-watch-image-44.jpg",
+    "price": "$18,700",
+    "description": "White dial with blue Cerachrom bezel and steel case.\nRegatta chronograph with programmable countdown.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":50,
+    "name": "Rolex Yacht-Master 40 126621",
+    "image": "category-watchs/categoty-watch-image-45.jpg",
+    "price": "$16,500",
+    "description": "Chocolate dial with Everose Rolesor steel and gold case.\nBidirectional rotatable bezel with date display.",
+    "category": "rolex",
+    "showHome": false
+  },
+
+  {
+    "id":51,
+    "name": "Rolex Oyster Perpetual 41 124300",
+    "image": "category-watchs/categoty-watch-image-46.jpg",
+    "price": "$11,500",
+    "description": "Slate dial with Oystersteel and yellow gold smooth bezel.\nClassic Oyster design with 41 mm case size.",
+    "category": "rolex",
+    "showHome": false
+  },
+  {
+    "id":52,
+    "name": "Rolex Datejust 41 126334",
+    "image": "category-watchs/categoty-watch-image-47.jpg",
+    "price": "$10,500",
+    "description": "Mint green dial with fluted white gold bezel and steel case.\nMagnified date display with Oyster bracelet.",
+    "category": "rolex",
+    "showHome": false
+  },
+
+
+  
+  
+  {
+    "id":53,
+    "name": "Omega Seamaster Diver 300M",
+    "image": "category-watchs/categoty-watch-image-57.jpg",
+    "price": "Rs. 1,450,000",
+    "description": "Black wave dial with ceramic bezel and steel case.\nPowered by Co-Axial Master Chronometer movement.\nPaired with stylish black and white NATO strap.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":54,
+    "name": "Omega Constellation Globemaster",
+    "image": "category-watchs/categoty-watch-image-48.jpg",
+    "price": "Rs. 1,850,000",
+    "description": "Opaline silver pie-pan dial with Sedna gold accents.\nFeatures classic fluted bezel and stainless steel case.\nComes with a premium dark grey leather strap.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":55,
+    "name": "Omega Speedmaster Moonwatch",
+    "image": "category-watchs/categoty-watch-image-49.jpg",
+    "price": "Rs. 2,100,000",
+    "description": "Iconic black step dial with triple chronograph sub-dials.\nBlack aluminum tachymeter bezel ring.\nStainless steel bracelet with comfortable folding clasp.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":56,
+    "name": "Omega Speedmaster Racing",
+    "image": "category-watchs/categoty-watch-image-50.jpg",
+    "price": "Rs. 2,350,000",
+    "description": "Silvery-white dial with contrasting black sub-dials.\nMaster Chronometer certified automatic movement.\nSolid stainless steel case with matching bracelet.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":57,
+    "name": "Omega Seamaster Professional",
+    "image": "category-watchs/categoty-watch-image-51.jpg",
+    "price": "Rs. 1,500,000",
+    "description": "White laser-engraved wave dial with black ceramic bezel.\nSkeleton hands and date display at 6 o'clock position.\nDurable black rubber strap for sport functionality.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":58,
+    "name": "Omega Speedmaster '57",
+    "image": "category-watchs/categoty-watch-image-52.jpg",
+    "price": "Rs. 2,600,000",
+    "description": "Vintage matte black dial with broad arrow hands.\nManual-winding Omega Co-Axial Master Chronometer calibre.\nBrushed stainless steel bezel and link bracelet.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":59,
+    "name": "Omega Seamaster Diver 007 Edition",
+    "image": "category-watchs/categoty-watch-image-53.jpg",
+    "price": "Rs. 2,800,000",
+    "description": "Brown tropical aluminum dial with vintage Super-LumiNova.\nLightweight Grade 2 titanium case built for action.\nMatching titanium mesh bracelet with foldover clasp.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":60,
+    "name": "Omega Speedmaster 38",
+    "image": "category-watchs/categoty-watch-image-54.jpg",
+    "price": "Rs. 1,650,000",
+    "description": "Light silver dial with oval sub-dials and rose gold hands.\nStainless steel case with aluminum tachymeter bezel.\nElegant steel bracelet designed for modern style.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":61,
+    "name": "Omega Railmaster Co-Axial",
+    "image": "category-watchs/categoty-watch-image-55.jpg",
+    "price": "Rs. 1,350,000",
+    "description": "Faded brown dial with vintage recessed hour markers.\nAnti-magnetic Master Chronometer movement performance.\nClassic light brown leather strap with clean stitching.",
+    "category": "omega",
+    "showHome": false
+  },
+  {
+    "id":62,
+    "name": "Omega Speedmaster Two-Tone",
+    "image": "category-watchs/categoty-watch-image-56.jpg",
+    "price": "Rs. 2,400,000",
+    "description": "Cream dial with cappuccino sub-dials and gold trim.\nStainless steel and 18K Sedna gold two-tone build.\nMatching two-tone bracelet with sleek finish.",
+    "category": "omega",
+    "showHome": false
+  },
+
+{
+  "id":63,
+  "name": "Omega Seamaster Diver 300M",
+  "image": "category-watchs/categoty-watch-image-57.jpg",
+  "price": "Rs. 1,450,000",
+  "description": "Black wave dial with ceramic bezel and steel case.\nPowered by Co-Axial Master Chronometer movement.\nPaired with stylish black and white NATO strap.",
+  "category": "omega",
+  "showHome": false
+},
+
+{
+  "id":64,
+  "name": "Omega Aqua Terra Worldtimer",
+  "image": "category-watchs/categoty-watch-image-58.jpg",
+  "price": "Rs. 2,950,000",
+  "description": "Green laser-ablated dial featuring detailed Earth map.\nGMT worldtimer functionality in 43 mm steel case.\nStainless steel bracelet with luxury butterfly clasp.",
+  "category": "omega",
+  "showHome": false
+},
+
+
+
+
+{
+  "id":65,
+    "name": "Panthère de Cartier Small Steel",
+    "image": "Vintage-images/Vintage-image-1.jpg",
+    "price": "$150",
+    "description": "Elegant small model stainless steel case with silvered dial and blue steel sword-shaped hands.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":66,
+    "name": "Panthère de Cartier Small Two-Tone",
+    "image": "Vintage-images/Vintage-image-2.jpg",
+    "price": "$195",
+    "description": "Luxurious small model featuring 18K yellow gold bezel with matching two-tone steel bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":67,
+    "name": "Panthère de Cartier <br> Steel",
+    "image": "Vintage-images/Vintage-image-3.jpg",
+    "price": "$160",
+    "description": "Classic square white dial with blue hands and polished steel link bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":68,
+    "name": "Santos de Cartier Automatic",
+    "image": "Vintage-images/Vintage-image-4.jpg",
+    "price": "$185",
+    "description": "Iconic square steel case featuring visible bezel screws and automatic movement.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":69,
+    "name": "Cartier Tank Must Steel",
+    "image": "Vintage-images/Vintage-image-5.jpg",
+    "price": "$170",
+    "description": "Rectangular silver dial with Roman numerals and solid steel bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":70,
+    "name": "Panthère de Cartier Two-Tone",
+    "image": "Vintage-images/Vintage-image-6.jpg",
+    "price": "$205",
+    "description": "Elegant two-tone steel and gold design with yellow gold bezel accent.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":71,
+    "name": "Panthère de Cartier Medium",
+    "image": "Vintage-images/Vintage-image-7.jpg",
+    "price": "$165",
+    "description": "Refined silver dial watch with full steel chain bracelet and blue crown.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":72,
+    "name": "Cartier Tank Louis Gold",
+    "image": "Vintage-images/Vintage-image-8.jpg",
+    "price": "$230",
+    "description": "Luxurious yellow gold rectangular case with premium brown leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":73,
+    "name": "Cartier Tank Solo Steel",
+    "image": "Vintage-images/Vintage-image-9.jpg",
+    "price": "$155",
+    "description": "Sleek rectangular profile with blue steel hands and stainless steel band.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":74,
+    "name": "Cartier Tank Must Leather",
+    "image": "Vintage-images/Vintage-image-10.jpg",
+    "price": "$150",
+    "description": "Timeless rectangular dial paired with textured black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":75,
+    "name": "Cartier Baignoire Gold",
+    "image": "Vintage-images/Vintage-image-11.jpg",
+    "price": "$255",
+    "description": "Distinctive oval yellow gold case with integrated bangle-style bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+{
+  "id":76,
+    "name": "Santos-Dumont Steel",
+    "image": "Vintage-images/Vintage-image-12.jpg",
+    "price": "$175",
+    "description": "Classic square steel watch with sunray dial finish and exposed screw details.",
+    "page": "Tenn Vintage",
+    "category": "vintage-cartier",
+    "showHome": true
+},
+
+
+  
+  {
+    "id":77,
+    "name": "Tissot PRX <br> Gold",
+    "image": "Vintage-images/Vintage-image-13.jpg",
+    "price": "$375",
+    "description": "A stylish vintage Tissot PRX watch with an all-gold finish.\nIt features a sleek integrated bracelet design.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":78,
+    "name": "Tissot Gentleman Powermatic 80 Blue",
+    "image": "Vintage-images/Vintage-image-14.jpg",
+    "price": "$775",
+    "description": "Sophisticated timepiece featuring a deep blue dial.\nIncludes gold-tone accents with a classic blue leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":79,
+    "name": "Tissot Gentleman Powermatic 80 Black",
+    "image": "Vintage-images/Vintage-image-15.jpg",
+    "price": "$775",
+    "description": "Elegant luxury watch featuring a black dial.\nComes with a rose gold bezel and a black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":80,
+    "name": "Tissot PRC 100 Solar All Black",
+    "image": "Vintage-images/Vintage-image-16.jpg",
+    "price": "$450",
+    "description": "Sleek and modern all-black watch with solar tech.\nIncludes minimalist markers and a matte black strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":81,
+    "name": "Tissot PRX Red Dial",
+    "image": "Vintage-images/Vintage-image-17.jpg",
+    "price": "$375",
+    "description": "Bold Tissot PRX watch with a red sunray dial.\nComes with a classic stainless steel integrated bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":82,
+    "name": "Tissot PRX Mint Green",
+    "image": "Vintage-images/Vintage-image-18.jpg",
+    "price": "$375",
+    "description": "Refreshing mint green dial Tissot PRX watch.\nFramed in a brushed stainless steel case and bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":83,
+    "name": "Tissot Visodate Blue",
+    "image": "Vintage-images/Vintage-image-19.jpg",
+    "price": "$395",
+    "description": "Classic heritage watch with a dark blue dial.\nPaired with an intricate steel link bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":84,
+    "name": "Tissot Classic Ice Blue Dial",
+    "image": "Vintage-images/Vintage-image-20.jpg",
+    "price": "$295",
+    "description": "Refined classic watch showcasing an ice blue dial.\nFeatures a durable stainless steel bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":85,
+    "name": "Tissot PRX White Rubber Strap",
+    "image": "Vintage-images/Vintage-image-21.jpg",
+    "price": "$350",
+    "description": "Sporty modern take on the classic PRX design.\nFeatures a white dial with a textured rubber.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":86,
+    "name": "Tissot Le Locle Powermatic 80 Navy",
+    "image": "Vintage-images/Vintage-image-22.jpg",
+    "price": "$625",
+    "description": "Traditional Swiss watch with a blue textured dial.\nDesigned with Roman numerals and a leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+ 
+
+  {
+    "id":87,
+    "name": "Tissot Classic Roman White",
+    "image": "Vintage-images/Vintage-image-23.jpg",
+    "price": "$295",
+    "description": "Elegant white dial watch with black Roman numerals.\nPaired with a premium brown leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+  {
+    "id":88,
+    "name": "Tissot Chronograph Two-Tone",
+    "image": "Vintage-images/Vintage-image-24.jpg",
+    "price": "$495",
+    "description": "Luxury two-tone chronograph watch with gold accents.\nFeatures sub-dials and a two-tone steel bracelet.",
+    "page": "Tenn Vintage",
+    "category": "vintage-tissot",
+    "showHome": true
+  },
+
+  
+  {
+    "id":89,
+    "name": "Vintage Longines Chronograph <br> Gold",
+    "image": "Vintage-images/Vintage-image-25.jpg",
+    "price": "$1,250",
+    "description": "A rare vintage Longines chronograph watch with a gold-tone dial.\nFeatures detailed sub-dials and a sleek black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":90,
+    "name": "Vintage Longines Classic Cream <br> Dial",
+    "image": "Vintage-images/Vintage-image-26.jpg",
+    "price": "$550",
+    "description": "Timeless Longines dress watch showcasing a soft cream dial.\nPaired with blued hands and a refined brown leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":91,
+    "name": "Vintage Longines Grand Prize Automatic",
+    "image": "Vintage-images/Vintage-image-27.jpg",
+    "price": "$620",
+    "description": "Classic Longines Grand Prize watch with a silver sunburst dial.\nComes with a date window and a stitched black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":92,
+    "name": "Vintage Longines Gold Case Date",
+    "image": "Vintage-images/Vintage-image-28.jpg",
+    "price": "$580",
+    "description": "Elegant vintage Longines with a distinct gold-toned cushion case.\nFeatures a clean white dial and a smooth black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":93,
+    "name": "Vintage Longines Ultra-Chron",
+    "image": "Vintage-images/Vintage-image-29.jpg",
+    "price": "$695",
+    "description": "High-beat vintage Longines Ultra-Chron with a silver dial.\nIncludes unique logo detailing and a black stitched strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":94,
+    "name": "Vintage Longines Jamboree",
+    "image": "Vintage-images/Vintage-image-30.jpg",
+    "price": "$510",
+    "description": "Minimalist Longines Jamboree watch featuring clean dial markers.\nCompleted with a classic stainless steel case and black strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":95,
+    "name": "Vintage Longines Tank <br> Rectangular",
+    "image": "Vintage-images/Vintage-image-31.jpg",
+    "price": "$750",
+    "description": "Art-deco styled rectangular Longines watch with blued hands.\nFeatures a small sub-seconds dial and a black leather band.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":96,
+    "name": "Vintage Longines Small Seconds Gold",
+    "image": "Vintage-images/Vintage-image-32.jpg",
+    "price": "$480",
+    "description": "Traditional vintage Longines featuring gold hour markers.\nEnhanced with a small sub-seconds dial and brown lizard strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":97,
+    "name": "Vintage Longines Classic Two-Tone Dial",
+    "image": "Vintage-images/Vintage-image-33.jpg",
+    "price": "$525",
+    "description": "Vintage Longines timepiece with a subtle two-tone cream dial.\nFramed by gold hands and a simple black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":98,
+    "name": "Vintage Longines Conquest Rose Gold",
+    "image": "Vintage-images/Vintage-image-34.jpg",
+    "price": "$890",
+    "description": "Stunning Longines Conquest watch with a rose gold-toned dial.\nFeatures faceted index markers and a textured tan leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+
+  {
+    "id":99,
+    "name": "Vintage Longines Legend <br> Diver",
+    "image": "Vintage-images/Vintage-image-35.jpg",
+    "price": "$1,150",
+    "description": "Iconic compressor-style diver watch with an internal rotating bezel.\nFeatures a tropical patina black dial and dual crowns.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+  {
+    "id":100,
+    "name": "Vintage Longines Conquest Silver Dial",
+    "image": "Vintage-images/Vintage-image-36.jpg",
+    "price": "$680",
+    "description": "Classic Longines Conquest Automatic with a clean silver dial.\nHighlights gold-tone hands, date display, and textured black leather strap.",
+    "page": "Tenn Vintage",
+    "category": "vintage-longines",
+    "showHome": true
+  },
+
+ 
+  {
+     "id":101,
+    "name": "Apple Watch Series 10 Gold Stainless Steel",
+    "image": "smartwatchs-images/smartwatch-image-1.jpg",
+    "price": "$699",
+    "description": "Elegant Apple Watch Series 10 featuring a classic gold finish.\nComes with a matching gold Milanese loop band and advanced health tracking.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":102,
+    "name": "Apple Watch Series 10 Pink Sport Loop",
+    "image": "smartwatchs-images/smartwatch-image-2.jpg",
+    "price": "$399",
+    "description": "Vibrant Apple Watch Series 10 styled with a comfortable pink Sport Loop band.\nOffers comprehensive activity monitoring and essential smart features.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":103,
+    "name": "Apple Watch Ultra 2 Ocean Blue Trail Loop",
+    "image": "smartwatchs-images/smartwatch-image-3.jpg",
+    "price": "$799",
+    "description": "Rugged Apple Watch Ultra 2 engineered for outdoor exploration and performance.\nPaired with a durable blue Trail Loop strap and high-brightness display.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":104,
+    "name": "Apple Watch Series 10 Hermès Edition Navy",
+    "image": "smartwatchs-images/smartwatch-image-4.jpg",
+    "price": "$1,249",
+    "description": "Luxury Hermès Edition Apple Watch Series 10 with a custom patterned navy strap.\nIncludes exclusive digital watch faces and premium craftsmanship.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":105,
+    "name": "Apple Watch Ultra 2 Hermès Edition Orange",
+    "image": "smartwatchs-images/smartwatch-image-5.jpg",
+    "price": "$1,399",
+    "description": "High-performance Apple Watch Ultra 2 Hermès edition featuring a signature orange band.\nDesigned for ultimate durability with titanium casing and specialized watch faces.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+
+  {
+     "id":106,
+    "name": "Apple Watch Series 10 Rose Gold Sport Band",
+    "image": "smartwatchs-images/smartwatch-image-6.jpg",
+    "price": "$399",
+    "description": "Sleek Apple Watch Series 10 crafted in a subtle rose gold finish.\nPaired with a light pink liquid silicone sport band and edge-to-edge display specialized watch faces.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":107,
+    "name": "Apple Watch Series 10 Matte Black Sport Band",
+    "image": "smartwatchs-images/smartwatch-image-7.jpg",
+    "price": "$399",
+    "description": "Modern Apple Watch Series 10 featuring a dark aluminum finish.\nStyled with a durable matching black sport band and vibrant color-blocked watch face.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":108,
+    "name": "Apple Watch Ultra 2 Natural Titanium Light Green Band",
+    "image": "smartwatchs-images/smartwatch-image-8.jpg",
+    "price": "$799",
+    "description": "High-end Apple Watch Ultra 2 with a natural titanium chassis built for endurance.\nEquipped with a bright light-green ocean/trail strap and comprehensive adventure watch face.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":109,
+    "name": "Apple Watch Ultra 2 Black Titanium Ocean Blue Band",
+    "image": "smartwatchs-images/smartwatch-image-9.jpg",
+    "price": "$799",
+    "description": "Stealthy Apple Watch Ultra 2 in dark black titanium casing.\nComes with an ocean blue flexible alpine loop strap and outdoor navigation displays.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":110,
+    "name": "Apple Watch Series 10 Silver Stainless Steel Milanese Loop",
+    "image": "smartwatchs-images/smartwatch-image-10.jpg",
+    "price": "$749",
+    "description": "Sophisticated Apple Watch Series 10 with a polished silver casing.\nFeatures a seamless magnetic Milanese loop mesh band and refined analog face display.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":111,
+    "name": "Apple Watch Series 10 Gold Edition Navy Blue Ocean Band",
+    "image": "smartwatchs-images/smartwatch-image-11.jpg",
+    "price": "$899",
+    "description": "Exclusive gold-plated luxury Apple Watch featuring a navy blue ribbed ocean strap.\nIncludes custom luxury watch face detailing and premium corrosion resistance.",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+  {
+     "id":112,
+    "name": "Apple Watch Series 10 Hermès Grand H Silver Stainless Steel",
+    "image": "smartwatchs-images/smartwatch-image-12.jpg",
+    "price": "$1,399",
+    "description": "Premium Apple Watch Series 10 Hermès edition featuring a polished silver stainless steel case.\nComes paired with an iconic Grand H metallic link bracelet .",
+    "page": "Smart Watches",
+    "category": "apple-smart-watch",
+    "showHome": true
+  },
+
+  {
+     "id":113,
+    "name": "Samsung Galaxy Watch Ultra Marine Band Orange",
+    "image": "smartwatchs-images/smartwatch-image-13.jpg",
+    "price": "$649",
+    "description": "Rugged Samsung Galaxy Watch Ultra featuring a titanium finish and high-visibility orange marine strap.\nDesigned for extreme outdoor performance and endurance sports tracking.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":114,
+    "name": "Samsung Galaxy Watch Ultra Dark Gray Marine Band",
+    "image": "smartwatchs-images/smartwatch-image-14.jpg",
+    "price": "$649",
+    "description": "Premium Samsung Galaxy Watch Ultra in a sleek dark gray finish.\nPaired with a comfortable matching dark sport band for advanced health and fitness tracking.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":115,
+    "name": "Samsung Galaxy Watch Ultra Titanium Silver White Band",
+    "image": "smartwatchs-images/smartwatch-image-15.jpg",
+    "price": "$649",
+    "description": "Sophisticated Samsung Galaxy Watch Ultra styled with a silver titanium case.\nFeatures a clean white sport band and sharp analog watch display.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":116,
+    "name": "Samsung Galaxy Fit 3 Pink Gold",
+    "image": "smartwatchs-images/smartwatch-image-16.jpg",
+    "price": "$59",
+    "description": "Lightweight Samsung Galaxy Fit 3 fitness band in an elegant pink gold casing.\nOffers comprehensive activity monitoring, sleep tracking, and extended battery life.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":117,
+    "name": "Samsung Galaxy Watch 7 Dark Gray",
+    "image": "smartwatchs-images/smartwatch-image-17.jpg",
+    "price": "$299",
+    "description": "Modern Samsung Galaxy Watch 7 featuring a dark aluminum case and matching silicone strap.\nPacked with AI-powered wellness insights and precise GPS monitoring.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":118,
+    "name": "Samsung Galaxy Watch 7 Black Sport Strap",
+    "image": "smartwatchs-images/smartwatch-image-18.jpg",
+    "price": "$299",
+    "description": "Sleek Samsung Galaxy Watch 7 designed with a minimalist black aesthetic.\nIncludes advanced heart rate tracking, sleep coaching, and seamless connectivity.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":119,
+    "name": "Samsung Galaxy Watch 6 Classic Silver",
+    "image": "smartwatchs-images/smartwatch-image-19.jpg",
+    "price": "$399",
+    "description": "Timeless Samsung Galaxy Watch 6 Classic with a rotating bezel and silver stainless frame.\nComes with a premium black hybrid leather strap and custom chronograph watch face.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+     "id":120,
+    "name": "Samsung Galaxy Watch 7 Cream White",
+    "image": "smartwatchs-images/smartwatch-image-20.jpg",
+    "price": "$299",
+    "description": "Elegant Samsung Galaxy Watch 7 styled in a soft cream silver finish.\nPaired with a ribbed light band featuring subtle orange and blue accent stitching.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+    "id":121,
+    "name": "Samsung Galaxy Watch 7 Green Sport Band",
+    "image": "smartwatchs-images/smartwatch-image-21.jpg",
+    "price": "$299",
+    "description": "Sporty Samsung Galaxy Watch 7 featuring a deep forest green casing and band.\nOffers vibrant watch display options and full health metric monitoring.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  {
+    "id":122,
+    "name": "Samsung Galaxy Watch Ultra Orange Ridge Band",
+    "image": "smartwatchs-images/smartwatch-image-22.jpg",
+    "price": "$649",
+    "description": "High-durability Samsung Galaxy Watch Ultra with a textured orange trail strap.\nFeatures a cushion-shaped titanium frame built for rugged adventures.",
+    "page": "Smart Watches",
+    "category": "samsung",
+    "showHome": true
+  },
+  
+  
+  {
+    "id":123,
+    "name": "Amazfit Active Silver Leather",
+    "image": "smartwatchs-images/Smartwatch-image-23.jpg",
+    "price": "$149",
+    "description": "Round silver stainless steel watch with a premium black leather strap.\nIncludes classic dial display options and extended battery life.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":124,
+    "name": "Amazfit Bip 5 Unity Charcoal Grey",
+    "image": "smartwatchs-images/Smartwatch-image-24.jpg",
+    "price": "$89",
+    "description": "Lightweight rectangular dark grey smartwatch with silicone band.\nFeatures large clear display and multi-system GPS tracking.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":125,
+    "name": "Amazfit Cheetah Pro Run Black",
+    "image": "smartwatchs-images/Smartwatch-image-25.jpg",
+    "price": "$229",
+    "description": "Performance sports watch with durable bezel and porous silicone strap.\nIncludes AI coaching algorithms and dual-band GPS.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":126,
+    "name": "Amazfit Balance Sunset Grey Fabric",
+    "image": "smartwatchs-images/Smartwatch-image-26.jpg",
+    "price": "$229",
+    "description": "Brushed metallic casing with grey woven fabric strap.\nOffers readiness analysis and crisp AMOLED display visuals.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":127,
+    "name": "Amazfit T-Rex Ultra Matte Black",
+    "image": "smartwatchs-images/Smartwatch-image-27.jpg",
+    "price": "$399",
+    "description": "Rugged outdoor watch with matte black bezel and silicone strap.\nBuilt to military-grade standards with outdoor navigation.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":128,
+    "name": "Amazfit Cheetah Round Speedster ",
+    "image": "smartwatchs-images/Smartwatch-image-28.jpg",
+    "price": "$199",
+    "description": "Circular watch with silver frame and black sport band.\nDesigned for runners with tailored training plans.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":129,
+    "name": "Amazfit Active Edge Square Leather",
+    "image": "smartwatchs-images/Smartwatch-image-29.jpg",
+    "price": "$169",
+    "description": "Squarish metallic case paired with black leather band.\nProvides minimalist clock face and daily wellness tracking.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":130,
+    "name": "Amazfit T-Rex 3 Forest Green",
+    "image": "smartwatchs-images/Smartwatch-image-30.jpg",
+    "price": "$279",
+    "description": "Outdoor watch with metallic bezel and green nylon strap.\nDelivers multi-sport tracking and offline topographic maps.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":131,
+    "name": "Amazfit Falcon Titanium Black Strap",
+    "image": "smartwatchs-images/Smartwatch-image-31.jpg",
+    "price": "$499",
+    "description": "Aircraft-grade titanium watch with black silicone strap.\nFeatures sapphire crystal glass and 20 ATM water resistance.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":132,
+    "name": "Amazfit T-Rex Ultra Titanium ",
+    "image": "smartwatchs-images/Smartwatch-image-32.jpg",
+    "price": "$399",
+    "description": "Titanium frame watch with black and orange dual-tone strap.\nEngineered for extreme environments with dual-band GPS.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":133,
+    "name": "Amazfit T-Rex Ultra Coral Red",
+    "image": "smartwatchs-images/Smartwatch-image-33.jpg",
+    "price": "$399",
+    "description": "Rugged adventure watch with coral red silicone strap.\nBuilt for tough environments with compass navigation.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  },
+  {
+    "id":134,
+    "name": "Amazfit Bip 5 Unity Matte Charcoal",
+    "image": "smartwatchs-images/Smartwatch-image-34.jpg",
+    "price": "$89",
+    "description": "Rectangular smartwatch with dark casing and black silicone strap.\nFeatures large display screen and long battery power.",
+    "page": "Smart Watches",
+    "category": "amazfit",
+    "showHome": true
+  }
+
+]
