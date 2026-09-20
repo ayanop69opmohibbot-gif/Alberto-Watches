@@ -415,9 +415,10 @@ fetch('products.json')
 
     var smartwatch = "";
     for (const element of data) {
-       if (
-    element.category === GetDataByCategorysmartwatch
-){
+     if (
+            GetDataByCategorysmartwatch === "apple-smart-watch" &&
+            element.category === GetDataByCategorysmartwatch
+        ) {
             smartwatch += `
             
             <div class="col-md-6 col-lg-4">
