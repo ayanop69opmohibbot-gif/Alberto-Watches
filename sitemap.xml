@@ -1,38 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Home Page -->
     <url>
-        <loc>https://www.yourwebsite.com/</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
+    <!-- Luxury Watches -->
     <url>
-        <loc>https://www.yourwebsite.com/luxury.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/luxury.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
+    <!-- Technology -->
     <url>
-        <loc>https://www.yourwebsite.com/technology.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/technology.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
+    <!-- Gallery -->
     <url>
-        <loc>https://www.yourwebsite.com/gallery.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/gallery.html</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
+    <!-- Store Locator -->
     <url>
-        <loc>https://www.yourwebsite.com/store-locator.html</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/store-locator.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
+    <!-- Support -->
     <url>
-        <loc>https://www.yourwebsite.com/support.html</loc>
+        <loc>https://ayanop69opmohibbot-gif.github.io/Alberto-Watches/support.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
