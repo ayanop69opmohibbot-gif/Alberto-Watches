@@ -577,6 +577,16 @@
     "showHome": false
   },
 
+  {
+  "id":63,
+  "name": "Omega Seamaster Diver 300M",
+  "image": "category-watchs/categoty-watch-image-57.jpg",
+  "price": "Rs. 1,450,000",
+  "description": "Black wave dial with ceramic bezel and steel case.\nPowered by Co-Axial Master Chronometer movement.\nPaired with stylish black and white NATO strap.",
+  "category": "omega",
+  "showHome": false
+},
+
 
 {
   "id":64,
