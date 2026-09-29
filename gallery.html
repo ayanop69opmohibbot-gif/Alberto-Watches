@@ -120,6 +120,11 @@
     <!-- Dark Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.55), rgba(0,0,0,.15));"></div>
 
+<button type="button" class="btn btn-outline-warning rounded-circle position-absolute top-0 end-0 m-4 d-flex align-items-center justify-content-center" style="width:48px; height:48px; z-index:10; position:absolute; right:30px; top:50%;" data-bs-toggle="modal" data-bs-target="#gallerySearchModal">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+    
     <div class="container position-relative">
         <div class="row align-items-center" style="min-height:430px;">
 
@@ -135,6 +140,37 @@
 
 </section>
 <!-- hero end  -->
+
+    
+<!--  HERO Search Modal -->
+<div class="modal fade" id="gallerySearchModal" tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border border-warning rounded-4">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-warning">Search Watches</h5>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body pb-4">
+                <div class="input-group">
+
+                    <button type="button" class="input-group-text bg-black text-warning border-warning" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <input type="text"
+                        id="gallerySearchInput"
+                        class="form-control bg-black text-white border-warning"
+                        placeholder="Search watches...">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- HERO Modal End -->
+
 
 <!-- CATEGORY FILTER -->
 <div class="bg-black py-4">
@@ -273,6 +309,19 @@ document.querySelectorAll(".filter-btn")
 .forEach(btn => btn.onclick = () => show(btn.dataset.category));
 
 });
+
+
+            
+$(document).ready(function(){
+                $("#gallerySearchInput").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+
+                    $("#galleryContainer .gallery-item").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+
 
 </script>
            
