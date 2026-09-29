@@ -89,7 +89,7 @@
         <li class="nav-item"><a href="index.html" class="nav-link active px-3">Home</a></li>
 <!-- dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">category</a>
+          <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Category</a>
 
           <ul class="dropdown-menu" style="background-color:#161616; border:1px solid #2a2a2a;">
             <li><a class="dropdown-item" href="Luxury.html" style="color:#d5d5d5;">Luxury</a></li>
@@ -120,11 +120,11 @@
     <!-- Dark Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.55), rgba(0,0,0,.15));"></div>
 
+<!-- Search Button -->
 <button type="button" class="btn btn-outline-warning rounded-circle position-absolute top-0 end-0 m-4 d-flex align-items-center justify-content-center" style="width:48px; height:48px; z-index:10; position:absolute; right:30px; top:50%;" data-bs-toggle="modal" data-bs-target="#gallerySearchModal">
 <i class="fa-solid fa-magnifying-glass"></i>
 </button>
 
-    
     <div class="container position-relative">
         <div class="row align-items-center" style="min-height:430px;">
 
@@ -141,7 +141,10 @@
 </section>
 <!-- hero end  -->
 
-    
+</section>
+<!-- hero end -->
+
+
 <!--  HERO Search Modal -->
 <div class="modal fade" id="gallerySearchModal" tabindex="-1">
 
@@ -174,19 +177,23 @@
 
 <!-- CATEGORY FILTER -->
 <div class="bg-black py-4">
+
+
+<!-- CATEGORY FILTER -->
+<div class="bg-black py-4">
     <div class="container text-center">
 
         <div class="d-flex flex-wrap justify-content-center gap-2">
 
-            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="patek-philippe">Patek Philippe</button>
+            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="patek-philippe">patek-philippe</button>
             <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="rolex">Rolex</button>
             <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="omega">Omega</button>
-            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="cartier">Cartier</button>
-            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="tissot">Tissot</button>
-            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="longines">Longines</button>
+            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="vintage-cartier">Cartier</button>
+            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="vintage-tissot">Tissot</button>
+            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="vintage-longines">Longines</button>
             <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="amazfit">Amazfit</button>
             <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="samsung">Samsung</button>
-            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="apple">Apple</button>
+            <button class="btn btn-outline-warning rounded-pill px-4 filter-btn" data-category="apple-smart-watch">Apple</button>
 
         </div>
 
@@ -273,13 +280,12 @@ fetch("products.json")
 
         box.innerHTML = "";
 
-         products
+        products
        .filter(p => category === "all" || p.category === category)
         .forEach(p => {
 
-
             box.innerHTML += `
-           <div class="col-12 col-md-6 col-lg-4">
+           <div class="col-12 col-md-6 col-lg-4  gallery-item">
 
     <div class="card bg-dark text-white border-secondary overflow-hidden watch-card">
 
@@ -289,7 +295,7 @@ fetch("products.json")
 
         <div class="card-body py-2 px-3">
             <h6 class="card-title text-white mb-1">${p.name}</h6>
-        
+
         </div>
     </div>
 </div> `;
@@ -304,7 +310,6 @@ document.querySelectorAll(".filter-btn")
 });
 
 
-            
 $(document).ready(function(){
                 $("#gallerySearchInput").on("keyup", function() {
                     var value = $(this).val().toLowerCase();
@@ -315,7 +320,7 @@ $(document).ready(function(){
                 });
             });
 
-
+            
 </script>
            
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
